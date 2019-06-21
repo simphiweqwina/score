@@ -1,0 +1,14 @@
+
+        <div class="row"  >
+                <button class=" btn btn-primary col-md-6" ng-click="sendChallenge()">Send Challenge</button>
+                <button class=" btn btn-secondary col-md-6">Find Challenge</button>
+
+        </div>
+
+        <div ng-include="'challengers.html'"> </div>
+     
+               <div id="currentMatch" style="display: none" >
+                 <button type="button" class="btn btn-danger btn-lg" ng-click="score()">ADD</button>
+                 <button type="button" class="btn btn-danger btn-lg" ng-click="subtractPoints()">SUBTRACT</button>
+
+                 </div>

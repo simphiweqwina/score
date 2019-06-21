@@ -1,0 +1,19 @@
+<div>
+<table  ng-app="myApp"class="table table-striped">
+    <thead>
+      <tr>
+        <th>EMAIL-ADDRESS</th>
+        <th>WINS</th>
+        <th>LOSSES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in players">
+        <td>{{x.emailAddress}}</td>
+        <td>{{x.wins}}</td>
+        <td>{{x.loses}}</td>
+      </tr>
+   
+    </tbody>
+  </table>
+</div>

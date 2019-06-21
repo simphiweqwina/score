@@ -1,0 +1,10 @@
+
+<div class="row" ng-if="checkChallengers()" id="challengersList" ng-controller="newGameCtrl" >
+    <div class="card col-md-4"  ng-repeat=" x in availbleChallengers" style="margin:2rem"> 
+      <img src="img/defaultPic.jpg" alt="John" style="width:100%">
+      <h1> {{x.emailAddress}}</h1>
+   
+    
+      <p><button ng-click="startMatch(x)" id="cardbutton">PLAY</button></p>
+    </div>
+</div>
